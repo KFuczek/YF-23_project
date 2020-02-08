@@ -5,18 +5,16 @@
 	border-right: 9px outset #1C6EA4;
 	border-radius: 0px 40px 40px 0px;
 	width: 20%;
-	height: 100vh;
+	min-height: 100%;
 	padding-top: 120px;
 	background-image: linear-gradient(to right, rgb(50, 158, 185) , rgb(3, 46, 141));
+	
+
 }
 
 .docs {
 	display: flex;
 	flex-direction: column;
-}
-
-.header a {
-	height: 30px;
 }
 
 .main {
@@ -149,4 +147,26 @@ body {
 
 .planeText {
     background-image: url(../images/yf-23_background.jpg);
+}
+
+
+
+  
+a {
+outline: none;
+text-decoration: none;
+display: inline-block;
+width: 200px;
+text-align: center;
+line-height: 3;
+color: rgb(255, 255, 255);
+border: solid 1px black;
+}
+
+a:link, a:visited, a:focus {
+background: rgb(1, 38, 138);
+}
+
+a:hover {     
+background: rgb(28, 60, 243);
 }
