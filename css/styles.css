@@ -17,11 +17,6 @@
 	height: 30px;
 }
 
-.aircraft {
-	background-color: red;
-	height: 100px;
-}
-
 .main {
 	display: flex;
 	flex-wrap: wrap;
@@ -39,4 +34,110 @@
 	width: 600px;
 	display: block;
 	margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+}
+
+.aircraft {
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+    position: relative;
+    
+    padding: 1em 1em .25em 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.title:after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 100%;
+    height: 4px;
+    
+    content: '';
+    background-color: #fff;
+}
+
+.clip-text {
+    font-size: 6em;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    padding: .5em .75em;
+	text-align: center;
+	width: 80%;
+	border: solid black 2px;
+    color: #fff;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    right: 35%;
+    bottom: 20%;
+    left: 35%;
+    background-color: #000;
+}
+
+.clip-text--no-textzone:before {
+    background-position: -.75em 0;
+}
+
+.clip-text--no-textzone:after {
+    content: none;
+}
+
+.clip-text--cover,
+.clip-text--cover:before {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+  background-position: 50% 50%;
+}
+
+.planeText {
+    background-image: url(../images/yf-23_background.jpg);
 }
