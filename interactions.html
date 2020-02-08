@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>YF-23</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body
+        onkeyup="blockDefault()"
+		onkeydown="changePosition()">
+	  <div class="main">
+		  <header class="header">
+			<a href="index.html">Strona główna</a>
+			<a href="parts.html">Części</a>
+			<a href="interactions.html">Interakcje</a>
+			<a href="docs.html">Dokumentacja</a>
+		  </header>
+		  <div class="mainContainer">
+				<div class="aircraft">
+					<div class="clip-text planeText">YF-23</div>
+				</div>
+			  <div
+				class="content">
+				
+				<div class="imgContainer">
+					<img class="cockpitInteraction1" src="images/interaction1.jpg" />
+					<img id="smallAircraft" src="images/smallAircraft.png" />
+									
+				<div class="leftDisplay">
+					<div class="crossContainer">
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+					</div>
+					<div class="lineForCrossContainer">
+						<div class="lineForCross"></div>
+						<div class="lineForCross"></div>
+					</div>
+				</div>
+				</div>
+			  </div>
+		  </div>
+	  </div>
+  <script>
+	  function blockDefault() {
+		  event.preventDefault();
+		  console.log('blocked');
+	  }
+	function changePosition() {
+	  event.preventDefault();
+	  var element = document.getElementById("smallAircraft");
+
+	  if (event.keyCode === 37 && element.offsetLeft > 240) { //left
+		element.style.left = (element.offsetLeft  - 2) + 'px';
+	  } else if (event.keyCode === 38 && element.offsetTop > 40) { //up
+		element.style.top = (element.offsetTop - 2) + 'px';
+	  } else if (event.keyCode === 39 && element.offsetLeft < 360) { //right
+		element.style.left = (element.offsetLeft  + 2) + 'px';
+	  } else if (event.keyCode === 40 && element.offsetTop < 170) { //down
+		element.style.top = (element.offsetTop + 2) + 'px';
+	  }
+
+		
+	  var crossLines = document.getElementsByClassName("lineForCrossContainer");
+	  for (var i = 0; i < crossLines.length;i++) {
+		  var st = window.getComputedStyle(crossLines[i], null);
+		  var tr = st.getPropertyValue("transform");
+		  var values = tr.split('(')[1],
+		  values = values.split(')')[0],
+		  values = values.split(',');
+
+		  var a = values[0]; 
+		  var b = values[1];
+		  var c = values[2];
+		  var d = values[3];
+		  var angle = Math.round(Math.asin(b) * (180/Math.PI));
+
+		  if (event.keyCode === 37 && angle > -30) { //left
+		    const newAngle = angle-2;
+			crossLines[i].style.transform = 'translateX(-50%) rotate('+newAngle+'deg)';
+		  } else if (event.keyCode === 39 && angle < 30) { //right
+		  	const newAngle = angle+2;
+			crossLines[i].style.transform = 'translateX(-50%) rotate('+newAngle+'deg)';
+		  }
+	  }
+	}
+	</script>
+</body>
+</html>

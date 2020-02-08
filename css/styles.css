@@ -170,3 +170,57 @@ background: rgb(1, 38, 138);
 a:hover {     
 background: rgb(28, 60, 243);
 }
+
+
+
+#smallAircraft {
+	position: absolute;
+    width: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+}
+.imgContainer {
+	position: relative;
+	width: 600px;
+	display: block;
+	margin: 0 auto;
+}
+
+.cockpitInteraction1 {
+	width: 600px;
+	display: block;
+    margin: 0 auto !important;
+}
+
+.cross {
+  border: 1px solid #0B6623;
+}
+
+.leftDisplay {
+	position: absolute;
+	width: max-content;
+	transform: translateX(25%);
+    top: 100px;
+}
+
+.crossContainer {
+	display: grid;
+	grid-template-columns: 25px 25px 25px 25px;
+    grid-template-rows: 25px 25px 25px 25px;
+}
+
+.lineForCross {
+	width: 25px;
+	margin-right: 5px;
+	border-top: 2px solid yellow;
+}
+
+.lineForCrossContainer {
+	position: absolute;
+	display: flex;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) rotate(0);;
+}
+
