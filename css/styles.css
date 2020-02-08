@@ -1,0 +1,42 @@
+.header {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border: 1px solid #000;
+	width: 20%;
+	height: 100vh;
+	padding-top: 120px;
+}
+
+.docs {
+	display: flex;
+	flex-direction: column;
+}
+
+.header a {
+	height: 30px;
+}
+
+.aircraft {
+	background-color: red;
+	height: 100px;
+}
+
+.main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.mainContainer {
+	width: 79%;
+}
+
+.content {
+	margin: 40px;
+}
+
+.mainAircraft {
+	width: 600px;
+	display: block;
+	margin: 0 auto;
+}
