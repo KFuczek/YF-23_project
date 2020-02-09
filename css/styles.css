@@ -15,7 +15,18 @@
 .docs {
 	display: flex;
 	flex-direction: column;
+    width: 60vw;
+    margin: 20px
 }
+
+.docs-text {
+    margin: 40px 30px;
+      font-size: 20px;
+  }
+.docs-img {
+    max-width: 100%;
+    height: auto;
+  }
 
 .main {
 	display: flex;
@@ -30,9 +41,10 @@
 
 .content {
 	margin: 40px;
-	height: 60vh;
+	min-height: 60vh;
 	
 }
+
 
 .mainAircraft {
 	width: 600px;
