@@ -224,3 +224,11 @@ background: rgb(28, 60, 243);
 	transform: translateX(-50%) rotate(0);;
 }
 
+
+.columns li{
+    float: left;
+    width: 50%;
+}
+.columns{
+    list-style-type: disc;
+}
