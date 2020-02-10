@@ -25,10 +25,24 @@
 					<div class="clip-text planeText">YF-23</div>
 				</div>
 			  <div class="content">
-				<img class="area" src="images/2.jpg" />
+				<img class="area itemPic" src="images/2.jpg" />
+				<div class="description">
+				
+				</div>
 			  </div>
 		  </div>
 	  </div>
-  <script src="js/scripts.js"></script>
+  <script type="text/javascript" src="data.json"></script>
+  <script>
+	document.getElementsByClassName('itemPic')[0].src = areas['left-up'].image;
+	document.getElementsByClassName('description')[0].innerHTML
+	areas['left-up'].items.forEach((item) => {
+		document.getElementsByClassName('description')[0].innerHTML += `<h1 class="nameHeader"><a href=${item.name}.html>${item.name}</a></h1>
+		<div class="itemContainer">
+		<img class="itemImage" src=${item.image}></img>
+		<div class="itemDescription">${item.description}</div>
+		</div>`;
+	});
+  </script>
 </body>
 </html>

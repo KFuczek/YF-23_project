@@ -16,7 +16,7 @@
 	  <div class="main">
 		  <header class="header">
 			<a href="index.html">Strona główna</a>
-			<a href="parts.html">Części</a>
+			<a href="parts.html">Części</a>`
 			<a href="interactions.html">Interakcje</a>
 			<a href="docs.html">Dokumentacja</a>
 		  </header>
@@ -26,23 +26,37 @@
 				</div>
 			  <div class="content">
 				  <header class="docs">
-					<ul class="columns" data-columns="2"></ulclass>
-						<li><a href="stick.html">drążek</a></li>
-						<li><a href="catapult.html">katapulta</a></li>
-						<li><a href="accelerator.html">manetka mocy</a></li>
-						<li><a href="emerygency_landing_gear_handle.html">emerygency landing gear handle</a></li>
-						<li><a href="master_ARM.html">master ARM</a></li>
-						<li><a href="landing.html">podwozie</a></li>
-						<li><a href="fire.html">ogień</a></li>
-						<li><a href="mfd.html">MFD</a></li>
-						<li><a href="tacan.html">TACAN</a></li>
-						<li><a href="warning.html">ostrzeżenia</a></li>	
-						<li><a href="caution_panel.html">panel informacyjny</a></li>	
+					<ul class="columns" data-columns="2"></ul>
 					</ul>		
 				</header>
 			  </div>
 		  </div>
 	  </div>
-  <script src="js/scripts.js"></script>
+	<script type="text/javascript" src="data.json"></script>
+  <script>
+
+	areas['right-down'].items.forEach((item) => {
+		document.getElementsByClassName('columns')[0].innerHTML += `<li><a href=${item.name}.html>${item.name}</a></li>`;
+	});
+
+	areas['right-up'].items.forEach((item) => {
+		document.getElementsByClassName('columns')[0].innerHTML += `<li><a href=${item.name}.html>${item.name}</a></li>`;
+	});
+	
+	areas['left-down'].items.forEach((item) => {
+		document.getElementsByClassName('columns')[0].innerHTML += `<li><a href=${item.name}.html>${item.name}</a></li>`;
+	});
+	areas['left-up'].items.forEach((item) => {
+		document.getElementsByClassName('columns')[0].innerHTML += `<li><a href=${item.name}.html>${item.name}</a></li>`;
+	});
+	areas['center-down'].items.forEach((item) => {
+		document.getElementsByClassName('columns')[0].innerHTML += `<li><a href=${item.name}.html>${item.name}</a></li>`;
+	});
+	areas['center-up'].items.forEach((item) => {
+		document.getElementsByClassName('columns')[0].innerHTML += `<li><a href=${item.name}.html>${item.name}</a></li>`;
+	});
+	
+  </script>
+
 </body>
 </html>

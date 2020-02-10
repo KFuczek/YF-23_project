@@ -1,0 +1,32 @@
+const areas = {
+    "left-up": {
+      "image": "images/2.jpg",
+      "items":[
+        {
+          "name": "MFD",
+          "image":"images/2.jpg",
+          "description": "Multi Function Display - są to małe ekrany LCD lub CRT otoczone konfigurowalnymi przyciskami, które mogą posłużyć do wyświetlania informacji użytkownikowi na wiele możliwych sposobów. Po raz pierwszy wyświetlacze typu MFD miały zastosowanie tylko w lotnictwie wojskowym, natomiast później zostały zaadoptowane do m.in. lotnictwa cywilnego."
+        }
+      ]
+    },
+    "left-down": {
+	  "image": "",
+	  "items":[]
+	},
+    "center-up": {
+	  "image": "",
+	  "items":[]
+	},
+    "center-down": {
+	  "image": "",
+	  "items":[]
+	},
+    "right-up": {
+	  "image": "",
+	  "items":[]
+	},
+    "right-down": {
+	  "image": "",
+	  "items":[]
+	}
+}
