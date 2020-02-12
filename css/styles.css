@@ -42,7 +42,9 @@
 .content {
 	display: flex;
 	margin: 40px;
-	min-height: 60vh;
+    min-height: 60vh;
+    flex-direction: column;
+    align-items: center;
 }
 
 .docsContent {
@@ -263,7 +265,7 @@ ul li a {
 }
 
 .area {
-	width: 600px;
+	width: 800px;
 }
 
 .itemPic {
@@ -271,7 +273,7 @@ ul li a {
 }
 
 .description {
-	width: 100%;
+	width: 800px;
 	margin: 0 20px;
 	padding: 20px;
 	border: 3px solid #41ff00;

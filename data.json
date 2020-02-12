@@ -1,183 +1,207 @@
 
  const areas = {
-   "left-up": {
-      "image": "images/2.jpg",
-      "items":[
-        {
-          "name": "mfd",
-          "image":"images/mfd.jpg",
-          "description": "Multi Function Display - są to małe ekrany LCD lub CRT otoczone konfigurowalnymi przyciskami, które mogą posłużyć do wyświetlania informacji użytkownikowi na wiele możliwych sposobów. Po raz pierwszy wyświetlacze typu MFD miały zastosowanie tylko w lotnictwie wojskowym, natomiast później zostały zaadoptowane do m.in. lotnictwa cywilnego."
-        },
-        {
-          "name": "amad-warning",
-          "image":"images/amad-warning.jpg",
-          "description":"AMAD fire warning light - ostrzeżenie o awarii pomocniczego generatora energii."
-        },
-        {
-          "name": "left-engine-warning",
-          "image":"images/left-engine-warning.jpg",
-          "description":"Left engine FIRE warning light - ostrzeżenie o awarii lewego silnika"
-        },
-        {
-          "name": "right-engine-warning",
-          "image":"images/right-engine-warning.jpg",
-          "description":"Right engine FIRE warning light - ostrzeżenie o awarii prawego silnika"
-        },
-        {
-          "name": "left-engine-burnthrough",
-          "image":"images/left-engine-burnthrough.jpg",
-          "description":"Left engine burnthrough warning light - ostrzeżenie o pożarze lewego silnika."
-        },
-        {
-          "name": "right-engine-burnthrough",
-          "image":"images/right-engine-burnthrough.jpg",
-          "description":"Right engine burnthrough warning light - ostrzeżenie o pożarze prawego silnika."
-        },
-        {
-          "name": "landing-gear-indicator-lights",
-          "image":"images/landing-gear-indicator-lights.jpg",
-          "description":"Landing gear indicator lights - wskaźniki wysuniętego podwozia. Lampka na górze informuje o przednim podwoziu, natomiast dwie dolne o podwoziu tylnym/głównym. Jeśli lampki świecą się na zielono to oznacza, że podwozie jest wypuszczone prawidłowo oraz jest gotowe do lądowania, kołowania. Czerwony kolor wskazuje, że podwozie jest schowane."
-        },
-        {
-          "name": "landing-gear-control-handle",
-          "image":"images/landing-gear-control-handle.jpg",
-          "description":"Landing gear control handle - gałka do wysuwania podwozia. Jeśli gałka jest w górze, to podwozie jest schowane, natomiast jeśli gałka jest w dole, to podwozie jest opuszczone."
-        },
-        {
-          "name": "master-arm-selector-switch",
-          "image":"images/master-arm-selector-switch.jpg",
-          "description":"Master Arm Selector Switch - przełącznik do uzbrajania maszyny, odblokowania uzbrojenia."
-        },
-        {
-          "name": "emergency-lg",
-          "image":"images/emergency-lg.jpg",
-          "description":"Emergency Landing Gear Handle - przełącznik do uzbrajania maszyny, odblokowania uzbrojenia."
-        },
-        {
-          "name": "emergency-lg",
-          "image":"images/emergency-lg.jpg",
-          "description":"Emergency Landing Gear Handle - dźwignia awaryjnego opuszczania podwozia."
-        },
-        {
-          "name": "canopy-emergency-jett",
-          "image":"images/canopy-emergency-jett.jpg",
-          "description":"Dźwignia do awaryjnego otwierania osłony kabiny."
-        }
-      ]
-    },
-    "left-down": {
-      "image":"images/6.jpg",
-      "items":[
-        {
-          "name": "ejection-control-handle",
-          "image":"images/ejection-control-handle.jpg",
-          "description":"Ejection control handle - Dźwignia bezpieczeństwa kontroli wyrzucania znajduje się po lewej stronie siedzenia wyrzucającego ACES-II. Służy do zabezpieczenia siedziska na podłodze przed przypadkowym uruchomieniem."
-        },
-        {
-          "name": "ejection-handle",
-          "image":"images/ejection-handle.jpg",
-          "description":"Ejection handle - Uchwyt pozwalający na wyrzut fotela pilota."
-        },
-        {
-          "name": "power-levers",
-          "image":"images/power-levers.jpg",
-          "description":"Power lever - dźwignia zasilania jest używana przez pilota, drugiego pilota lub autopilota do kontrolowania mocy ciągu silników samolotu."
-        }
-      ]
-    },
-    "center-up": {
-      "image":"images/4.jpg",
-      "items":[
-        {
-          "name": "hud",
-          "image":"images/hud.jpg",
-          "description":"Head-Up Display - wyświetlacz przezierny prezentujący informacje na specjalnej szybie bez zasłaniania widoku. Początkowo technika ta miała tylko zastosowanie militarne, do prezentacji danych w samolotach bojowych, ale obecnie jest używana także dla celów cywilnych w wielu zastosowaniach rzeczywistości rozszerzonej (AR), między innymi w samolotach cywilnych, samochodach, motocyklach, a także rowerach."
-        },
-        {
-          "name": "mfd",
-          "image":"images/mfd.jpg",
-          "description": "Multi Function Display - są to małe ekrany LCD lub CRT otoczone konfigurowalnymi przyciskami, które mogą posłużyć do wyświetlania informacji użytkownikowi na wiele możliwych sposobów. Po raz pierwszy wyświetlacze typu MFD miały zastosowanie tylko w lotnictwie wojskowym, natomiast później zostały zaadoptowane do m.in. lotnictwa cywilnego."
-        },
-        {
-          "name": "tacan",
-          "image":"images/tacan.jpg",
-          "description":"TACAN, ang. Tactical Air Navigation, wojsk. system radionawigacji lotn. bliskiego zasięgu; umożliwia pomiar odległości i kierunku do radiolatarni systemu, pracującej na podobnej zasadzie jak w systemie DME, w pasmie częst. 960–1215 MHz; przy zasięgu do 370 km, pomiar odległości jest obarczony błędem nie większym niż 600 m, a pomiar kierunku błędem do 2°; radiolatarnie systemu TACAN współpracują z wszystkimi urządzeniami zapytującymi DME, a radiolatarnie systemu DME umożliwiają pomiar odległości pokładowym układom TACAN; wspólna lokacja radiolatarni TACAN i radiolatarni VOR tworzy system VORTAC umożliwiający cywilnym statkom powietrznym dokonywanie pomiaru odległości od radiolatarni TACAN, a namiaru kątowego od radiolatarni systemu VOR; wojsk. statki powietrzne dokonują pomiaru odległości i namiaru kątowego od radiolatarni systemu TACAN; w ten sposób z jednego systemu są obsługiwane zarówno cywilne, jak i wojsk. statki powietrzne."
-        },
-        {
-          "name": "emission-limit",
-          "image":"images/emission-limit.jpg",
-          "description":"Emission Limit light - Limit emisji."
-        },
-        {
-          "name": "master-caution-warning",
-          "image":"images/master-caution-warning.jpg",
-          "description":"Master Caution warning light/reset - lampka oraz przycisk resetujący powiadomienie lub ostrzeżenie."
-        },
-        {
-          "name": "ai-warning",
-          "image":"images/ai-warning.jpg",
-          "description":"AI warning light (RWR activity) - ostrzeżenie radarowego systemu ostrzegawczego."
-        },
-        {
-          "name": "sam-launch-warning",
-          "image":"images/sam-launch-warning.jpg",
-          "description":"SAM launch warning light - ostrzeżenie przed pociskami ziemia-powietrze."
-        },
-        {
-          "name": "low-altitude-warning",
-          "image":"images/low-altitude-warning.jpg",
-          "description":"Low Altitude Warning light - ostrzeżenie przeciw niskiej wysokości."
-        },
-        {
-          "name": "terrain-follow-failure",
-          "image":"images/terrain-follow-failure.jpg",
-          "description":"Terrain Follow Failure light - sygnalizacja awarii systemu śledzenia ukształtowania terenu."
-        },
-        {
-          "name": "canopy-unlocked-warning",
-          "image":"images/canopy-unlocked-warning.jpg",
-          "description":"Canopy Unlocked warning light - ostrzeżenie przed niezamkniętą osłoną kabiny."
-        }
-      ]
-    },
-    "center-down": {
-      "image":"images/3.jpg",
-      "items":[
-        {
-          "name": "hotas",
-          "image":"images/hotas.png",
-          "description":"Hands on Throttle and Stick - sposób sterowania nowoczesnymi samolotami wojskowymi, polegający na takim rozmieszczeniu wszystkich przełączników sterowania awioniką i uzbrojeniem, aby można je było obsłużyć bez odrywania rąk od drążka sterowego i przepustnicy. Obecnie system sterowania HOTAS jest stosowany w większości amerykańskich, europejskich i rosyjskich samolotów bojowych."
-        }
-      ]
-    },
-    "right-up": {
-      "image":"images/5.jpg",
-      "items":[
-        {
-          "name": "adi",
-          "image":"images/adi.jpg",
-          "description":"Sztuczny horyzont (ang. artificial horizon, attitude indicator – ADI) – lotniczy przyrząd żyroskopowy, służący do określenia orientacji przestrzennej statku powietrznego względem płaszczyzny horyzontu lokalnego (kąt pochylenia i przechylenia). Sztuczny horyzont jest niezbędny do wykonywania lotów bez widoczności ziemi (loty w chmurach lub w nocy) ze względu na szybką utratę orientacji przestrzennej przez pilota, zagrażającej wprowadzeniem samolotu w korkociąg."
-        },
-        {
-          "name": "caution-alert-panel",
-          "image":"images/caution-alert-panel.jpg",
-          "description":"Caution alert lights panel - Panel ostrzegawczy to wyświetlacz z 32 lampkami ostrzegawczymi, które pokazują napotkane trudności pochodzące od różnych systemów."
-        }
-      ]
-    },
-    "right-down": {
-      "image":"images/7.jpg",
-      "items":[
-        {
-          "name": "ejection-handle",
-          "image":"images/ejection-handle.jpg",
-          "description":"Ejection handle - Uchwyt pozwalający na wyrzut fotela pilota."
-        },
-        {
-          "name": "canopy-open-close",
-          "image":"images/canopy-open-close.jpg",
-          "description":"Canopy open/close handle - dźwignia do otwierania osłony kabiny."
-        }
-      ]
-    }
+  "left-up": {
+    "image": "images/2.jpg",
+    "items": [
+      {
+        "id": "mfd",
+        "name": "Multi Function Display",
+        "image": "images/mfd.jpg",
+        "description": "Jest to mały ekran LCD lub CRT otoczony konfigurowalnymi przyciskami, które mogą posłużyć do wyświetlania informacji użytkownikowi na wiele możliwych sposobów. Po raz pierwszy wyświetlacze typu MFD miały zastosowanie tylko w lotnictwie wojskowym, natomiast później zostały zaadoptowane do m.in. lotnictwa cywilnego."
+      },
+      {
+        "id": "amad-warning",
+        "name": "AMAD fire warning light",
+        "image": "images/amad-warning.jpg",
+        "description": "Ostrzeżenie o awarii pomocniczego generatora energii."
+      },
+      {
+        "id": "left-engine-warning",
+        "name": "Left engine FIRE warning light",
+        "image": "images/left-engine-warning.jpg",
+        "description": "Ostrzeżenie o awarii lewego silnika"
+      },
+      {
+        "id": "right-engine-warning",
+        "name": "Right engine FIRE warning light",
+        "image": "images/right-engine-warning.jpg",
+        "description": "Ostrzeżenie o awarii prawego silnika"
+      },
+      {
+        "id": "left-engine-burnthrough",
+        "name": "Left engine burnthrough warning light",
+        "image": "images/left-engine-burnthrough.jpg",
+        "description": "Ostrzeżenie o pożarze lewego silnika."
+      },
+      {
+        "id": "right-engine-burnthrough",
+        "name": "Right engine burnthrough warning light",
+        "image": "images/right-engine-burnthrough.jpg",
+        "description": "Ostrzeżenie o pożarze prawego silnika."
+      },
+      {
+        "id": "landing-gear-indicator-lights",
+        "name": "Landing gear indicator lights",
+        "image": "images/landing-gear-indicator-lights.jpg",
+        "description": "Wskaźniki wysuniętego podwozia. Lampka na górze informuje o przednim podwoziu, natomiast dwie dolne o podwoziu tylnym/głównym. Jeśli lampki świecą się na zielono to oznacza, że podwozie jest wypuszczone prawidłowo oraz jest gotowe do lądowania, kołowania. Czerwony kolor wskazuje, że podwozie jest schowane."
+      },
+      {
+        "id": "landing-gear-control-handle",
+        "name": "Landing gear control handle",
+        "image": "images/landing-gear-control-handle.jpg",
+        "description": "Gałka do wysuwania podwozia. Jeśli gałka jest w górze, to podwozie jest schowane, natomiast jeśli gałka jest w dole, to podwozie jest opuszczone."
+      },
+      {
+        "id": "master-arm-selector-switch",
+        "name": "Master Arm Selector Switch",
+        "image": "images/master-arm-selector-switch.jpg",
+        "description": "Przełącznik do uzbrajania maszyny, odblokowania uzbrojenia."
+      },
+      {
+        "id": "emergency-lg",
+        "name": "Emergency Landing Gear Handle",
+        "image": "images/emergency-lg.jpg",
+        "description": "Dźwignia awaryjnego opuszczania podwozia."
+      },
+      {
+        "id": "canopy-emergency-jett",
+        "name": "Canopy Emergency Jett",
+        "image": "images/canopy-emergency-jett.jpg",
+        "description": "Dźwignia do awaryjnego otwierania osłony kabiny."
+      }
+    ]
+  },
+  "left-down": {
+    "image": "images/6.jpg",
+    "items": [
+      {
+        "id": "ejection-control-handle",
+        "name": "Ejection control handle",
+        "image": "images/ejection-control-handle.jpg",
+        "description": "Dźwignia bezpieczeństwa kontroli wyrzucania znajduje się po lewej stronie siedzenia wyrzucającego ACES-II. Służy do zabezpieczenia siedziska na podłodze przed przypadkowym uruchomieniem."
+      },
+      {
+        "id": "ejection-handle",
+        "name": "Ejection handle",
+        "image": "images/ejection-handle.jpg",
+        "description": "Uchwyt pozwalający na wyrzut fotela pilota."
+      },
+      {
+        "id": "power-levers",
+        "name": "Power lever",
+        "image": "images/power-levers.jpg",
+        "description": "Dźwignia zasilania jest używana przez pilota, drugiego pilota lub autopilota do kontrolowania mocy ciągu silników samolotu."
+      }
+    ]
+  },
+  "center-up": {
+    "image": "images/4.jpg",
+    "items": [
+      {
+        "id": "hud",
+        "name": "Head-Up Display",
+        "image": "images/hud.jpg",
+        "description": "Wyświetlacz przezierny prezentujący informacje na specjalnej szybie bez zasłaniania widoku. Początkowo technika ta miała tylko zastosowanie militarne, do prezentacji danych w samolotach bojowych, ale obecnie jest używana także dla celów cywilnych w wielu zastosowaniach rzeczywistości rozszerzonej (AR), między innymi w samolotach cywilnych, samochodach, motocyklach, a także rowerach."
+      },
+      {
+        "id": "mfd",
+        "name": "Multi Function Display",
+        "image": "images/mfd.jpg",
+        "description": "Są to małe ekrany LCD lub CRT otoczone konfigurowalnymi przyciskami, które mogą posłużyć do wyświetlania informacji użytkownikowi na wiele możliwych sposobów. Po raz pierwszy wyświetlacze typu MFD miały zastosowanie tylko w lotnictwie wojskowym, natomiast później zostały zaadoptowane do m.in. lotnictwa cywilnego."
+      },
+      {
+        "id": "tacan",
+        "name": "Tactical Air Navigation",
+        "image": "images/tacan.jpg",
+        "description": "Wojskowy system radionawigacji lotniczej bliskiego zasięgu; umożliwia pomiar odległości i kierunku do radiolatarni systemu, pracującej na podobnej zasadzie jak w systemie DME, w pasmie częst. 960–1215 MHz; przy zasięgu do 370 km, pomiar odległości jest obarczony błędem nie większym niż 600 m, a pomiar kierunku błędem do 2°; radiolatarnie systemu TACAN współpracują z wszystkimi urządzeniami zapytującymi DME, a radiolatarnie systemu DME umożliwiają pomiar odległości pokładowym układom TACAN; wspólna lokacja radiolatarni TACAN i radiolatarni VOR tworzy system VORTAC umożliwiający cywilnym statkom powietrznym dokonywanie pomiaru odległości od radiolatarni TACAN, a namiaru kątowego od radiolatarni systemu VOR; wojsk. statki powietrzne dokonują pomiaru odległości i namiaru kątowego od radiolatarni systemu TACAN; w ten sposób z jednego systemu są obsługiwane zarówno cywilne, jak i wojsk. statki powietrzne."
+      },
+      {
+        "id": "emission-limit",
+        "name": "Emission Limit light",
+        "image": "images/emission-limit.jpg",
+        "description": "Limit emisji."
+      },
+      {
+        "id": "master-caution-warning",
+        "name": "Master Caution warning light/reset",
+        "image": "images/master-caution-warning.jpg",
+        "description": "Lampka oraz przycisk resetujący powiadomienie lub ostrzeżenie."
+      },
+      {
+        "id": "ai-warning",
+        "name": "AI warning light",
+        "image": "images/ai-warning.jpg",
+        "description": "Ostrzeżenie radarowego systemu ostrzegawczego."
+      },
+      {
+        "id": "sam-launch-warning",
+        "name": "SAM launch warning light",
+        "image": "images/sam-launch-warning.jpg",
+        "description": "Ostrzeżenie przed pociskami ziemia-powietrze."
+      },
+      {
+        "id": "low-altitude-warning",
+        "name": "Low Altitude Warning light",
+        "image": "images/low-altitude-warning.jpg",
+        "description": "Ostrzeżenie przeciw niskiej wysokości."
+      },
+      {
+        "id": "terrain-follow-failure",
+        "name": "Terrain Follow Failure light",
+        "image": "images/terrain-follow-failure.jpg",
+        "description": "Sygnalizacja awarii systemu śledzenia ukształtowania terenu."
+      },
+      {
+        "id": "canopy-unlocked-warning",
+        "name": "Canopy Unlocked warning light",
+        "image": "images/canopy-unlocked-warning.jpg",
+        "description": "Ostrzeżenie przed niezamkniętą osłoną kabiny."
+      }
+    ]
+  },
+  "center-down": {
+    "image": "images/3.jpg",
+    "items": [
+      {
+        "id": "hotas",
+        "name": "Hands on Throttle and Stick",
+        "image": "images/hotas.png",
+        "description": "Sposób sterowania nowoczesnymi samolotami wojskowymi, polegający na takim rozmieszczeniu wszystkich przełączników sterowania awioniką i uzbrojeniem, aby można je było obsłużyć bez odrywania rąk od drążka sterowego i przepustnicy. Obecnie system sterowania HOTAS jest stosowany w większości amerykańskich, europejskich i rosyjskich samolotów bojowych."
+      }
+    ]
+  },
+  "right-up": {
+    "image": "images/5.jpg",
+    "items": [
+      {
+        "id": "adi",
+        "name": "ADI",
+        "image": "images/adi.jpg",
+        "description": "Sztuczny horyzont (ang. artificial horizon, attitude indicator – ADI) – lotniczy przyrząd żyroskopowy, służący do określenia orientacji przestrzennej statku powietrznego względem płaszczyzny horyzontu lokalnego (kąt pochylenia i przechylenia). Sztuczny horyzont jest niezbędny do wykonywania lotów bez widoczności ziemi (loty w chmurach lub w nocy) ze względu na szybką utratę orientacji przestrzennej przez pilota, zagrażającej wprowadzeniem samolotu w korkociąg."
+      },
+      {
+        "id": "caution-alert-panel",
+        "name": "Caution alert lights panel",
+        "image": "images/caution-alert-panel.jpg",
+        "description": "Panel ostrzegawczy to wyświetlacz z 32 lampkami ostrzegawczymi, które pokazują napotkane trudności pochodzące od różnych systemów."
+      }
+    ]
+  },
+  "right-down": {
+    "image": "images/7.jpg",
+    "items": [
+      {
+        "id": "ejection-handle",
+        "name": "Ejection handle",
+        "image": "images/ejection-handle.jpg",
+        "description": "Uchwyt pozwalający na wyrzut fotela pilota."
+      },
+      {
+        "id": "canopy-open-close",
+        "name": "Canopy open/close handle",
+        "image": "images/canopy-open-close.jpg",
+        "description": "Dźwignia do otwierania osłony kabiny."
+      }
+    ]
   }
+}

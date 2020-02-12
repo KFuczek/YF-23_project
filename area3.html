@@ -37,10 +37,9 @@
 	document.getElementsByClassName('itemPic')[0].src = areas['center-up'].image;
 	document.getElementsByClassName('description')[0].innerHTML
 	areas['center-up'].items.forEach((item) => {
-		document.getElementsByClassName('description')[0].innerHTML += `<h1 class="nameHeader"><a href=${item.name}.html>${item.name}</a></h1>
+		document.getElementsByClassName('description')[0].innerHTML += `<h1 class="nameHeader"><a href=${item.id}.html>${item.name}</a></h1>
 		<div class="itemContainer">
 		<img class="itemImage" src=${item.image}></img>
-		<div class="itemDescription">${item.description}</div>
 		</div>`;
 	});
   </script>
