@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-    border-right: 1px solid #000;
+    border-right: 1px solid #41ff00;
     width: 12%;
 	padding-top: 120px;
 }
@@ -31,16 +31,33 @@
 	width: 88%;
 }
 
+.AllhorizontalLineContainer {
+	transform: translateX(0%);
+	position: absolute;
+	top: 13%;
+	width: 98px;
+	left: 45%;
+}
+
 .content {
+	display: flex;
+	margin: 40px;
+	min-height: 60vh;
+}
+
+.docsContent {
+	flex-direction: column;
+		display: flex;
 	margin: 40px;
 	min-height: 60vh;
 }
 
 
 .mainAircraft {
-	width: 600px;
 	display: block;
 	margin: 0 auto;
+	width:1000px;
+	height: unset !important;
 }
 
 * {
@@ -61,7 +78,8 @@ body {
 
 body {
     font-family: 'Oswald', sans-serif;
-    color: #000;
+    color: #41ff00;
+	background-color: #000;
 }
 
 .aircraft {
@@ -96,7 +114,7 @@ body {
     padding: .5em .75em;
 	text-align: center;
 	width: 100%;
-	border: solid black 2px;
+	border: solid #41ff00 2px;
     color: #fff;
     -webkit-background-clip: text;
 
@@ -149,10 +167,27 @@ body {
 }
 
 
+.docs {
+	display: flex;
+	flex-direction: column;
+    width: 60vw;
+    margin: 20px
+}
+
+.docs-text {
+    margin: 40px 30px;
+      font-size: 20px;
+  }
+.docs-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
 
   
 a {
-	filter: grayscale(100%);
+	color: #41ff00;
     font-size: 20px;
     font-style: italic;
     font-weight: 900;
@@ -171,7 +206,6 @@ a {
 }
 .imgContainer {
 	position: relative;
-	width: 600px;
 	display: block;
 	margin: 0 auto;
 }
@@ -183,26 +217,27 @@ a {
 }
 
 .cross {
-  border: 1px solid #0B6623;
+  border: 1px solid #41ff00;
 }
 
 .leftDisplay {
 	position: absolute;
 	width: max-content;
-	transform: translateX(38%) rotate(-2deg);
-    top: 39px;
+    transform: translateX(109%) rotate(-2deg);
+    top: 42%;
+    left: 25%;
 }
 
 .crossContainer {
 	display: grid;
-	grid-template-columns: 30px 30px 30px 30px;
-    grid-template-rows: 30px 30px 30px 30px;
+	grid-template-columns: 20px 20px 20px 20px;
+    grid-template-rows: 20px 20px 20px 20px;
 }
 
 .lineForCross {
 	width: 25px;
 	margin-right: 5px;
-	border-top: 2px solid yellow;
+	border-top: 3px solid #41ff00;
 }
 
 .lineForCrossContainer {
@@ -210,7 +245,8 @@ a {
 	display: flex;
 	top: 50%;
 	left: 50%;
-	transform: translateX(-50%) rotate(0);;
+	transform: translateX(-50%) rotate(0);
+	width: 50px;
 }
 
 ul li a {
@@ -231,14 +267,14 @@ ul li a {
 }
 
 .itemPic {
-	border: 3px solid #000;
+	border: 3px solid #41ff00;
 }
 
 .description {
 	width: 100%;
 	margin: 0 20px;
 	padding: 20px;
-	border: 3px solid #000;
+	border: 3px solid #41ff00;
 }
 
 .itemContainer {
@@ -253,6 +289,64 @@ ul li a {
 .itemDescription {
 	margin: 20px;
 	font-style: italic;
+}
+
+.hotas {
+		position: absolute;
+		width: 80px;
+		top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(35%);
+	transform-origin: 50% 100%;
+}
+
+.topDisplay {
+    width: 142px;
+    height: 100px;
+    top: 13%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.horizontaLinesContainer {
+		display: flex;
+			transform: translateX(0%);
+}
+
+.compas {
+	position: absolute;
+	transform: translateX(0%);
+	    left: 59%;
+    top: 42%;
+	width: 75px;
+}
+.compasPlane {
+	position: absolute;
+	 transform: translateX(0%) rotate(-42deg);
+	    left: 61%;
+    top: 45%;
+	width: 35px;
+	
+}
+
+.lineForAdi {
+    position: absolute;
+    transform: translateX(0%);
+    left: 68.5%;
+    top: 52%;
+    width: 25px;
+    padding-left: 4.5px;
+}
+
+.horizontalLine {
+	border-top: 3px solid #41ff00;
+    margin-left: 21px;
+    width: 25px;
+    top: 10px;
+    margin-top: 12px;
+	left: 15px;
+    position: relative;
 }
 
 .itemImage {

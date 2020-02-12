@@ -31,7 +31,7 @@
   <script type="text/javascript" src="data.json"></script>
   <script>
 	const fileName =  window.location.href.split('/')[window.location.href.split('/').length-1].split('.')[0];
-	const jsonItem = areas['left-up'].items.filter(item => item.name === fileName);
+	const jsonItem = areas['left-down'].items.filter(item => item.name === fileName);
 	  console.log(jsonItem)
 	const text = jsonItem[0].description;
 	const img = jsonItem[0].image;

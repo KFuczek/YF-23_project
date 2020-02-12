@@ -12,12 +12,13 @@
 
 </head>
 
-<body>
+<body
+        onkeyup="blockDefault()"
+		onkeydown="changePosition()">
 	  <div class="main">
 		  <header class="header">
 			<a href="index.html">Strona główna</a>
 			<a href="parts.html">Części</a>
-			<a href="interactions.html">Interakcje</a>
 			<a href="docs.html">Dokumentacja</a>
 		  </header>
 		  <div class="mainContainer">
@@ -25,22 +26,171 @@
 					<div class="clip-text planeText">YF-23</div>
 				</div>
 			  <div class="content">
+			  	<div class="imgContainer">
 				<img usemap="#airmap" class="mainAircraft itemPic" src="images/1.jpg" />
-				<div class="description">
 				
+				<img class="compas" src="images/kompas.png" />
+				<img class="hotas" src="images/hotas.png" />
+				<img class="compasPlane" src="images/samolot.png" />
+				<img class="lineForAdi" src="images/adi.png" />
+				<div class="leftDisplay">
+					<div class="crossContainer">
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+						<div class="cross"></div>
+					</div>
+					<img class="lineForCrossContainer" src="images/lewy_monitor.png" />
 				</div>
+				<img class="topDisplay" src="images/hud.png" />
+				<img class="AllhorizontalLineContainer" src="images/hud2.png" />
 				<map name="airmap">
-				  <area shape="rect" coords="0,0,82,126"  href="area1.html">
-				  <area shape="rect" coords="190,100,410,240" href="area3.html">
-				  <area shape="rect" coords="230,240,380,360" href="area2.html">
-				  <area shape="rect" coords="150,200,210,330" href="area1.html">
-				  <area shape="rect" coords="380,200,460,330" href="area4.html">
-				  <area shape="rect" coords="100,300,220,450" href="area5.html">
-				  <area shape="rect" coords="380,310,520,450" href="area6.html">
+				  <area shape="rect" coords="300,160,700,400" href="area3.html">
+				  <area shape="rect" coords="400,400,600,600" href="area2.html">
+				  <area shape="rect" coords="230,350,400,530" href="area1.html">
+				  <area shape="rect" coords="580,350,720,530" href="area4.html">
+				  <area shape="rect" coords="100,550,400,1050" href="area5.html">
+				  <area shape="rect" coords="600,550,900,1050" href="area6.html">
 				</map>
+				</div>
 			  </div>
 		  </div>
 	  </div>
-  <script src="js/scripts.js"></script>
+  <script>
+	  function blockDefault() {
+		  event.preventDefault();
+	  }
+	function changePosition() {
+	  event.preventDefault();
+	  var AllhorizontalLineContainer = document.getElementsByClassName("AllhorizontalLineContainer")[0];	
+	  var crossLines = document.getElementsByClassName("lineForCrossContainer")[0];
+	  var hotas = document.getElementsByClassName("hotas")[0];
+	  var compas = document.getElementsByClassName("compas")[0];
+	  var adi = document.getElementsByClassName("lineForAdi")[0];
+
+		  var st = window.getComputedStyle(crossLines, null);
+		  var tr = st.getPropertyValue("transform");
+		  var values = tr.split('(')[1],
+		  values = values.split(')')[0],
+		  values = values.split(',');
+
+		  var a = values[0]; 
+		  var b = values[1];
+		  var c = values[2];
+		  var d = values[3];
+		  var angle = Math.round(Math.asin(b) * (180/Math.PI));
+
+		  if (event.keyCode === 37 && angle < 30) { //left
+		    const newAngle = angle+2;
+			crossLines.style.transform = 'translateX(-50%) rotate('+newAngle+'deg)';
+		  } else if (event.keyCode === 39 && angle > -30) { //right
+		  	const newAngle = angle-2;
+			crossLines.style.transform = 'translateX(-50%) rotate('+newAngle+'deg)';
+		  }
+	  
+		  var st = window.getComputedStyle(AllhorizontalLineContainer, null);
+		  var tr = st.getPropertyValue("transform");
+		  var values = tr.split('(')[1],
+		  values = values.split(')')[0],
+		  values = values.split(',');
+
+		  var a = values[0]; 
+		  var b = values[1];
+		  var c = values[2];
+		  var d = values[3];
+		  var angle = Math.round(Math.asin(b) * (180/Math.PI));
+
+		  if (event.keyCode === 37 && angle < 30) { //left
+		    const newAngle = angle+2;
+			AllhorizontalLineContainer.style.transform = 'rotate('+newAngle+'deg)';
+		  } else if (event.keyCode === 39 && angle > -30) { //right
+		  	const newAngle = angle-2;
+			AllhorizontalLineContainer.style.transform = 'rotate('+newAngle+'deg)';
+		  }
+
+
+
+
+	   var st = window.getComputedStyle(compas, null);
+		  var tr = st.getPropertyValue("transform");
+		  var values = tr.split('(')[1],
+		  values = values.split(')')[0],
+		  values = values.split(',');
+
+		  var a = values[0]; 
+		  var b = values[1];
+		  var c = values[2];
+		  var d = values[3];
+		  var angle = Math.round(Math.asin(b) * (180/Math.PI));
+
+		  if (event.keyCode === 37 && angle > -90) { //left
+		    const newAngle = angle-6;
+			compas.style.transform = 'rotate('+newAngle+'deg)';
+		  } else if (event.keyCode === 39 && angle < 90) { //right
+		  	const newAngle = angle+6;
+			compas.style.transform = 'rotate('+newAngle+'deg)';
+		  }
+		  
+		  	   var st = window.getComputedStyle(adi, null);
+		  var tr = st.getPropertyValue("transform");
+		  var values = tr.split('(')[1],
+		  values = values.split(')')[0],
+		  values = values.split(',');
+
+		  var a = values[0]; 
+		  var b = values[1];
+		  var c = values[2];
+		  var d = values[3];
+		  var angle = Math.round(Math.asin(b) * (180/Math.PI));
+
+		  if (event.keyCode === 37 && angle > -30) { //left
+		    const newAngle = angle-2;
+			adi.style.transform = 'rotate('+newAngle+'deg)';
+		  } else if (event.keyCode === 39 && angle < 30) { //right
+		  	const newAngle = angle+2;
+			adi.style.transform = 'rotate('+newAngle+'deg)';
+		  }
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+	  
+		  var st = window.getComputedStyle(hotas, null);
+		  var tr = st.getPropertyValue("transform");
+		  var values = tr.split('(')[1],
+		  values = values.split(')')[0],
+		  values = values.split(',');
+
+		  var a = values[0]; 
+		  var b = values[1];
+		  var c = values[2];
+		  var d = values[3];
+		  var angle = Math.round(Math.asin(b) * (180/Math.PI));
+
+		  if (event.keyCode === 37 && angle > -30) { //left
+		    const newAngle = angle-2;
+			hotas.style.transform = 'translateX(-50%) translateY(35%) rotate('+newAngle+'deg)';
+		  } else if (event.keyCode === 39 && angle < 30) { //right
+		  	const newAngle = angle+2;
+			hotas.style.transform = 'translateX(-50%) translateY(35%) rotate('+newAngle+'deg)';
+		  }
+		  
+	}
+	</script>
 </body>
 </html>
