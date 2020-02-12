@@ -1,5 +1,4 @@
-
- const areas = {
+const areas = {
   "left-up": {
     "image": "images/2.jpg",
     "items": [
@@ -113,7 +112,7 @@
         "id": "tacan",
         "name": "Tactical Air Navigation",
         "image": "images/tacan.jpg",
-        "description": "Wojskowy system radionawigacji lotniczej bliskiego zasięgu; umożliwia pomiar odległości i kierunku do radiolatarni systemu, pracującej na podobnej zasadzie jak w systemie DME, w pasmie częst. 960–1215 MHz; przy zasięgu do 370 km, pomiar odległości jest obarczony błędem nie większym niż 600 m, a pomiar kierunku błędem do 2°; radiolatarnie systemu TACAN współpracują z wszystkimi urządzeniami zapytującymi DME, a radiolatarnie systemu DME umożliwiają pomiar odległości pokładowym układom TACAN; wspólna lokacja radiolatarni TACAN i radiolatarni VOR tworzy system VORTAC umożliwiający cywilnym statkom powietrznym dokonywanie pomiaru odległości od radiolatarni TACAN, a namiaru kątowego od radiolatarni systemu VOR; wojsk. statki powietrzne dokonują pomiaru odległości i namiaru kątowego od radiolatarni systemu TACAN; w ten sposób z jednego systemu są obsługiwane zarówno cywilne, jak i wojsk. statki powietrzne."
+        "description": "Wojskowy system radionawigacji lotniczej bliskiego zasięgu; umożliwia pomiar odległości i kierunku do radiolatarni systemu, pracującej na podobnej zasadzie jak w systemie DME, w pasmie częst. 960–1215 MHz; przy zasięgu do 370 km, pomiar odległości jest obarczony błędem nie większym niż 600 m, a pomiar kierunku błędem do 2°; radiolatarnie systemu TACAN współpracują z wszystkimi urządzeniami zapytującymi DME, a radiolatarnie systemu DME umożliwiają pomiar odległości pokładowym układom TACAN; wspólna lokacja radiolatarni TACAN i radiolatarni VOR tworzy system VORTAC umożliwiający cywilnym statkom powietrznym dokonywanie pomiaru odległości od radiolatarni TACAN, a namiaru kątowego od radiolatarni systemu VOR; wojsk. statki powietrzne dokonują pomiaru odległości i namiaru kątowego od radiolatarni systemu TACAN; w ten sposób z jednego systemu są obsługiwane zarówno cywilne, jak i wojsk. statki powietrzne. \n\n 6.  TACAN digits - wpisywanie informacji do systemu tacan\n7. TACAN power - Włącznik systemu TACAN\n8. TACAN A/A A/G selector - Wybór trybu pracy\n9. IFF power - Włącznik systemu IFF (Identification Friend or Foe (IFF) (identyfikacja swój-obcy)\n10. UHF channel number selector - Wybór pasma fal decymetrowych UHF\n11. Autopilot NAV/HDG select - Wybór tryb pracy autopilota pomiędzy NAV a HDG\n12. Autopilot ALT/ATT select - Wprowadzanie współrzędnych do komputera\n26. Autopilot enable - Włącznik autopilota\n27. Emission Limit power switch - Przełącznik zasilania emisji\n28. HUD brightness intensity knob - Przełącznik ustawienia jasności HUD\n29. HUD REJ selector (Drift C/O)\n30. HUD Day/Night/Auto selector - Wybór trybu nocnego lub dziennego pracy HUD\n31. Air to Air selection button - tryb pracy powietrze-powietrze\n32. Air to Ground selection button - tryb pracy powietrze-ziemia"
       },
       {
         "id": "emission-limit",
